@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChiTietSanPhamActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_chitietsp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:title="Sửa thông tin sản phẩm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Sửa thông tin sản phẩm"
+        app:titleTextColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/img_chitietsp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="Hình ảnh của sản phẩm Tẩy trang Loreal"
+        tools:src="@drawable/taytrang_loreal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_chitietsp" />
+
+    <EditText
+        android:id="@+id/tv_chitietsp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:text="Tẩy trang Loreal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_chitietsp" />
+
+    <EditText
+        android:id="@+id/tv_chitietsp_gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="170000"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_chitietsp_name" />
+
+    <EditText
+        android:id="@+id/tv_chitietsp_mota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        tools:text="Micellar Water 3-in-1 Refreshing Even For Sensitive Skin"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_chitietsp_gia" />
+
+    <Button
+        android:id="@+id/btn_themvaogiohang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Sửa thông tin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_chitietsp_mota" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
